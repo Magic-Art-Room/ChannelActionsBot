@@ -97,7 +97,7 @@ start_msg = """Hi {user}!
 `Click the below button to know how to use me!`"""
 start_buttons = [
     [Button.inline("How to use me ❓", data="helper")],
-    [Button.url("Updates", "https://t.me/BotzHub")],
+    [Button.url("Updates", "https://t.me/ArkBotz")],
 ]
 
 
@@ -126,7 +126,7 @@ async def start_in(event):
 @bot.on(events.CallbackQuery(data="helper"))
 async def helper(event):
     await event.edit(
-        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nTo approve members who are already in waiting list, upgrade to premium for 3$ per month! Contact @xditya_bot if interested.',
+        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nHello,
         buttons=Button.inline("Main Menu 📭", data="start"),
     )
 
@@ -269,6 +269,6 @@ async def broad(e):
 
 
 log.info("Started Bot - %s", bot_username)
-log.info("\n@BotzHub\n\nBy - @xditya.")
+log.info("\n@ArkBotz\n\nBy - @ArkBotz.")
 
 bot.run_until_disconnected()
