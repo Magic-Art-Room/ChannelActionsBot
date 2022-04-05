@@ -126,7 +126,7 @@ async def start_in(event):
 @bot.on(events.CallbackQuery(data="helper"))
 async def helper(event):
     await event.edit(
-        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nHello,
+        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!\n\nBot Managed By @ARKBotz',
         buttons=Button.inline("Main Menu 📭", data="start"),
     )
 
