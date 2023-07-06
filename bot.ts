@@ -99,7 +99,7 @@ bot
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
         .text(ctx.t("usage-help"), "helper").row()
-        .url(ctx.t("updates"), "https://t.me/BotzHub"),
+        .url(ctx.t("updates"), "https://t.me/ARKBotz"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from.id);
@@ -108,7 +108,7 @@ bot
 bot.callbackQuery("helper", async (ctx) => {
   await ctx.editMessageText(
     ctx.t("help") +
-      "\n\nTo approve members who are already in waiting list, upgrade to premium for 3$ per month! Contact @xditya_bot if interested.",
+      "\n\nBot Managed By @ARKBotz.",
     {
       reply_markup: new InlineKeyboard().text("Main Menu 📭", "start"),
       parse_mode: "HTML",
@@ -123,7 +123,7 @@ bot.callbackQuery("start", async (ctx) => {
       {
         reply_markup: new InlineKeyboard()
           .text(ctx.t("usage-help"), "helper").row()
-          .url(ctx.t("updates"), "https://t.me/BotzHub"),
+          .url(ctx.t("updates"), "https://t.me/ARKBotz"),
         disable_web_page_preview: true,
         parse_mode: "HTML",
       },
@@ -405,4 +405,4 @@ bot.command("setlang", async (ctx) => {
 
 await bot.init();
 console.info(`Started Bot - @${bot.botInfo.username}`);
-console.info("\nDo join @BotzHub!\nBy - @xditya.\n");
+console.info("\nDo join @ARKBotz");
