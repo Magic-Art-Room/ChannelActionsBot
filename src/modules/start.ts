@@ -7,7 +7,7 @@ const composer = new Composer<MyContext>();
 
 composer
   .command("start", async (ctx) => {
-    if (ctx.chat.type != "private" && ctx.match == "by_BotzHub") {
+    if (ctx.chat.type != "private" && ctx.match == "by_Arkbotz") {
       await ctx.reply("Continue setting me up in PM!", {
         reply_markup: new InlineKeyboard().url(
           "Continue",
